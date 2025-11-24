@@ -8,7 +8,7 @@
 
 std::vector< char > foo(std::list< Human >& people) {
     
-   std::vector< char > retval(people.size());
+   std::vector< char > retval;
 
     std::for_each(people.begin(), people.end(), [&](Human& h) {
         h.birthday();
